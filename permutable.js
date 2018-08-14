@@ -1,5 +1,4 @@
-var number = "31
-";
+var number = "31";
 var len = number.length;
 var arr = [];
 var _factorial = 1;
