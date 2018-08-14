@@ -1,4 +1,5 @@
-var number = "31";
+var number = "31
+";
 var len = number.length;
 var arr = [];
 var _factorial = 1;
@@ -10,10 +11,10 @@ function factorial (num) {
   if (num == 0 || num == 1) {
     return _factorial;
   }
-  for( let ix = num; ix > 0; ++ ix) {
-    _factorial *= ix;
+
+    _factorial *= num;
     factorial (num - 1);
-  }
+
 }
 
 factorial (len);
@@ -29,7 +30,7 @@ function prime_number (num) {
 }
 
 for (let ix = 0; ix < len; ++ix) {
-  arr[ix] = str[ix];
+  arr[ix] = number[ix];
 }
 
 function permutable_prime (arr, _factorial) {
@@ -64,3 +65,4 @@ function permutable_prime (arr, _factorial) {
 }
 
 permutable_prime (arr, _factorial);
+
